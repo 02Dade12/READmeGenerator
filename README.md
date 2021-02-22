@@ -18,6 +18,8 @@ This application is great if the user does not want to spend to much time creati
 This code was writtin by Enrique Collazo
 # Tests
 Test were run on my local drive before pushing to Github for public use.
+# Preview
+![Screenshot](./Develop/assets/screenshot.png)
 # Questions
 If you have any questions, please try reaching me through one of the following sources:
 * 02Dade12
