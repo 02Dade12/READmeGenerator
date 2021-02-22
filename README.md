@@ -1,5 +1,6 @@
 # Node.js README Generator
 # Table of Contents
+* [Description](https://github.com/02Dade12/READmeGenerator#description)
 * [Installation](https://github.com/02Dade12/READmeGenerator#installation)
 * [Usage](https://github.com/02Dade12/READmeGenerator#usage)
 * [License](https://github.com/02Dade12/READmeGenerator#license)
