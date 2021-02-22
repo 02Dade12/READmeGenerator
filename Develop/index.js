@@ -35,6 +35,14 @@ const questions = [{
         {
             name: "MIT",
             value: "[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)",
+        },
+        {
+            name: "Personal",
+            value: "[![Generic badge](https://img.shields.io/badge/Personal-Active-blue.svg)](https://shields.io/)",
+        },
+        {
+            name: "None",
+            value: "None",
         }
     ]
 },
@@ -42,34 +50,50 @@ const questions = [{
     type: 'input',
     name: 'tests',
     message: 'How did you test your project?',
+},
+{
+    type: 'input',
+    name: 'githubUsername',
+    message: 'What is your Github username?',
+},
+{
+    type: 'input',
+    name: 'githubLink',
+    message: 'What is your Github Link?',
+},
+{
+    type: 'input',
+    name: 'githubEmail',
+    message: 'What is your email?',
 }];
 
 inquirer
     .prompt(questions)
     .then(data => {
         let readme =
-        `
-        # ${data.title}
+`# ${data.title}
+# Description 
+${data.description}
+# Table of Contents
+* [Installation](https://github.com/02Dade12/READmeGenerator#installation)
+* [Usage](https://github.com/02Dade12/READmeGenerator#usage)
+* [License](https://github.com/02Dade12/READmeGenerator#license)
+* [Contributing](https://github.com/02Dade12/READmeGenerator#contributing)
+* [Tests](https://github.com/02Dade12/READmeGenerator#tests)
+* [Questions](https://github.com/02Dade12/READmeGenerator#questions)
 
+# Installation
+# Usage
+# License
+${data.license}
+# Contributing
+# Tests
+# Questions
+If you have any questions, please try reaching me through one of the following sources:
+* ${data.githubUsername}
+* [Github Link](${data.githubLink})
+* ${data.githubEmail}`
 
-        # Description
-        ${data.description}
+fs.writeFileSync("README.md", readme);
 
-        
-        # Installation
-
-
-        # Usage
-
-
-        # Contributing
-
-
-        # License
-        ${data.license}
-
-        # Tests
-
-        `
-        fs.writeFileSync("README.md", readme);
-    });
+});
