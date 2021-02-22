@@ -25,7 +25,7 @@ const questions = [{
 {
     type: 'input',
     name: 'contributing',
-    message: 'What did you contribute to the project?',
+    message: 'Please name the Project conributors',
 },
 {
     type: 'list',
@@ -72,22 +72,26 @@ inquirer
     .then(data => {
         let readme =
 `# ${data.title}
-# Description 
-${data.description}
 # Table of Contents
+* [Description](https://github.com/02Dade12/READmeGenerator#description)
 * [Installation](https://github.com/02Dade12/READmeGenerator#installation)
 * [Usage](https://github.com/02Dade12/READmeGenerator#usage)
 * [License](https://github.com/02Dade12/READmeGenerator#license)
 * [Contributing](https://github.com/02Dade12/READmeGenerator#contributing)
 * [Tests](https://github.com/02Dade12/READmeGenerator#tests)
 * [Questions](https://github.com/02Dade12/READmeGenerator#questions)
-
+# Description 
+${data.description}
 # Installation
+${data.installation}
 # Usage
+${data.usage}
 # License
 ${data.license}
 # Contributing
+This code was writtin by ${data.contributing}
 # Tests
+${data.tests}
 # Questions
 If you have any questions, please try reaching me through one of the following sources:
 * ${data.githubUsername}
