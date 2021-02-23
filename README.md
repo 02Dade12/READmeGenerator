@@ -10,7 +10,7 @@
 # Description
 This applications will create a high-quality README that will be deployed with the information based on the user input.
 # Installation
-In order for this to work, the user would need to install Inquirer. Before running this, please besure there is a JSON file `package.json` in your repo, one can be create by first running `npm init` in your terminal when you first set up the project, before installing any dependencies. 
+In order for this to work, the user would need to install `Inquirer`. Before running this, please be sure there is a JSON file `package.json` in your repo, one can be create by first running `npm init` in your terminal when you first set up the project, before installing any dependencies. 
 # Usage
 This application is great if the user does not want to spend to much time creating and styling the `README.md` file for their application.
 # License
