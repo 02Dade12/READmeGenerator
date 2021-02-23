@@ -20,7 +20,7 @@ This code was writtin by Enrique Collazo
 # Tests
 Test were run on my local drive before pushing to Github for public use.
 # Preview
-[Video Preview](https://drive.google.com/file/d/1_5dxbojnBLsIBZrYCvIv2zNNsRk7dyJd/preview)
+[Video Preview](https://drive.google.com/file/d/1_5dxbojnBLsIBZrYCvIv2zNNsRk7dyJd/view)
 </br> 
 </br> 
 ![Screenshot](./Develop/assets/screenshot.png)
